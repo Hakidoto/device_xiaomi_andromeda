@@ -208,6 +208,7 @@ persist.sys.wfd.virtual=0
 
 #property to enable HWC for VDS
 debug.sf.enable_hwc_vds=1
+debug.cpurend.vsync=false
 
 # enable tunnel encoding for amrwb
 tunnel.audio.encode = true
