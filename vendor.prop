@@ -71,6 +71,7 @@ ro.audio.soundtrigger.lowpower=true
 ro.audio.soundtrigger=sva
 ro.bluetooth.a2dp_offload.supported=true
 ro.carrier=unknown
+ro.charger.enable_suspend=true
 ro.cit.nonrootbuild=true
 ro.cit.stablebuild=true
 ro.com.android.dataroaming=true
