@@ -386,6 +386,7 @@ PRODUCT_PACKAGES += \
     teardown_loopback.sh \
     init.qcom.factory.rc \
     init.qcom.rc \
+    init.andromeda.rc \
     init.qcom.usb.rc \
     init.target.rc \
     fstab.qcom \
