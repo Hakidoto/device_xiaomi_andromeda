@@ -51,9 +51,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/andromeda
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := andromeda
 
