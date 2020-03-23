@@ -313,9 +313,8 @@ persist.camera.sat.fallback.lux.d=50
 #quick charge type detect
 persist.quick.charge.detect=1
 
-# Enable blurs, hidden under dev option
+# Enable blurs
 ro.surface_flinger.supports_background_blur=1
-persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
 
 # IORap
