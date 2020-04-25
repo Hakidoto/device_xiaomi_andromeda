@@ -8,6 +8,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     audio.sys.noisy.broadcast.delay=600 \
     audio.sys.offload.pstimeout.secs=3 \
     camera.disable_zsl_mode=true \
+    dalvik.vm.dex2oat64.enabled=true \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapsize=512m \
