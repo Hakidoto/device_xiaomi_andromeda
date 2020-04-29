@@ -39,3 +39,5 @@ libalhLDC.so
 libalAILDC.so
 libsdk_sr.so
 st_sr_models.bin
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
