@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_andromeda.mk
+    $(LOCAL_DIR)/aosp_andromeda.mk

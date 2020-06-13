@@ -1,0 +1,19 @@
+[
+  {
+    "repository":  "kernel_xiaomi_andromeda",
+    "target_path": "kernel/xiaomi/andromeda",
+    "branch":      "ten"
+  },
+  {
+    "remote": "pixel-devices-bitbucket",
+    "repository":  "vendor_xiaomi_andromeda",
+    "target_path": "vendor/xiaomi/andromeda",
+    "branch":      "ten"
+  },
+  {
+    "remote": "pixel-gitlab",
+    "repository": "packages_apps_PixelLiveWallpaper",
+    "target_path": "packages/apps/PixelLiveWallpaper",
+    "branch": "ten"
+  }
+]
