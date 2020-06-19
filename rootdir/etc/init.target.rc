@@ -127,6 +127,8 @@ service charge_logger /vendor/bin/charge_logger
     group system system wakelock
     disabled
     oneshot
+on boot
+    chown system system /sys/class/thermal/thermal_message/sconfig
 
 on property:sys.boot_completed=1
     start charge_logger
