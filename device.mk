@@ -22,7 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pa
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -98,6 +98,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     liba2dpoffload \
+    libbluetooth_qti \
     libbthost_if \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.bluetooth_dun@1.0.vendor \
@@ -110,7 +111,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    ParanoidCamera
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -193,10 +194,6 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -234,10 +231,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_sm8150
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -298,6 +291,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
+# NN
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-rtti
+
+# Paranoid Doze
+PRODUCT_PACKAGES += ParanoidDoze
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
@@ -326,10 +326,18 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti.xml \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    perf \
+    telephony \
+    wfd
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -390,7 +398,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5 \
     android.hardware.radio.config@1.1 \
     android.hardware.radio.deprecated@1.0 \
-    android.hardware.secure_element@1.0
+    android.hardware.secure_element@1.0 \
+    libjson \
+    libril \
+    librilutils
 
 # SQL
 PRODUCT_PACKAGES += \
@@ -421,18 +432,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 # Telephony
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
@@ -446,10 +445,6 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
@@ -512,6 +507,3 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon

@@ -6,18 +6,22 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+# Include Paranoid Android common configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Inherit from andromeda device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_andromeda
+PRODUCT_NAME := pa_andromeda
 PRODUCT_DEVICE := andromeda
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 3 5G
