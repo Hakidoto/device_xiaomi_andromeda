@@ -14,6 +14,9 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
+    <!-- Package name for the call-based number verification app -->
+    <string name="platform_number_verification_package" translatable="false">com.google.android.gms</string>
+
     <!-- String indicating the package name of the device ImsService implementation for MMTEL. -->
     <string name="config_ims_mmtel_package" translatable="false">org.codeaurora.ims</string>
 
