@@ -1166,7 +1166,6 @@ vendor/lib64/libperfioctl.so|7bf289a68671f675ded7fb62e561e59832983138
 vendor/lib64/libqti-iopd.so|2b73fcad0d5562e0cf1677fefddd8c819788b64d
 vendor/lib64/libqti-iopd-client.so|512e12a6a86eb2dc5ad73a590c996d0e67e2ec1a
 vendor/lib64/libqti-perfd.so|099ae56bd72c2f46be5eabe0d5b5eb61156d8433
-vendor/lib64/libqti-perfd-client.so|3bc34a04c34be06d501aac539c5c6b5fbdb68df9
 vendor/lib64/libqti-util.so|17e335d8bc2920f39e7090fe8f9f60ac82b255b9
 vendor/lib64/libqti-util-vendor.so|0f549baeede81667f252a11640c26a054d00becd
 vendor/lib64/libqti-utils.so|e734331e086c9b78852871312429ce69092775ca

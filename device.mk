@@ -313,6 +313,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
+    libqti-perfd-client \
     vendor.qti.hardware.perf@2.2.vendor
 
 # Protobuf
