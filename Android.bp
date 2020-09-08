@@ -1,3 +1,9 @@
 subdirs = [
     "light"
 ]
+
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+    ],
+}
