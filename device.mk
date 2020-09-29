@@ -92,7 +92,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt/conf
 
 PRODUCT_PACKAGES += \
     BluetoothQti \
