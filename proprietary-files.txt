@@ -1031,7 +1031,9 @@ vendor/lib/libpvr.so
 vendor/lib64/libgsl.so
 vendor/lib64/libpvr.so
 
-# HotwordEnrollment
+# HotwordEnrollment from qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJBMIXM-release-keys
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 
