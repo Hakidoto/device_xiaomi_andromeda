@@ -1721,12 +1721,6 @@ vendor/lib64/libhbtpfrmwk.so
 # UBWC
 vendor/lib/libstreamparser.so
 
-# Vibrator
-vendor/bin/hw/vendor.qti.hardware.vibrator@1.2-service
-vendor/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc
-vendor/lib/hw/vibrator.default.so
-vendor/lib64/hw/vibrator.default.so
-
 # Voice
 vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
@@ -1875,14 +1869,12 @@ lib/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 lib/vendor.xiaomi.hardware.misys@1.0.so
 lib/vendor.xiaomi.hardware.misys@2.0.so
 lib/vendor.xiaomi.hardware.misys@3.0.so
-lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 lib64/vendor.xiaomi.hardware.misys@1.0.so
 lib64/vendor.xiaomi.hardware.misys@2.0.so
 lib64/vendor.xiaomi.hardware.misys@3.0.so
-lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 system/etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
 system/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
 system/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
