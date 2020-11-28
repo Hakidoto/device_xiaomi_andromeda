@@ -25,9 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-pe \
     $(LOCAL_PATH)/overlay-system
 
-# Properties
-include $(LOCAL_PATH)/vendor_prop.mk
-
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
