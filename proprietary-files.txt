@@ -841,7 +841,6 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 vendor/firmware/stm_fts_production_limits.csv
 vendor/firmware/tas2557_uCDSP.bin
-vendor/firmware/wigig/wigig.ini
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # GPS - from qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJBMIXM-release-keys
@@ -1809,6 +1808,53 @@ vendor/bin/cnss_diag
 vendor/bin/fstman
 vendor/bin/nv_mac
 
+# WiFi - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/athdiag|ae8ebe2461702bb029f28e527c4406b0382bcf96
+vendor/bin/embmsslServer|c9e8d75427b4ce758dda0f01f31a6209e5367ac3
+vendor/bin/hal_proxy_daemon|734beab4f9243c8d4f0f8cfd03097849fac01605
+vendor/bin/myftm|4291e2b39558ae526eccac722626887da67b9668
+vendor/bin/pktlogconf|4ea3ee308255f967070114684a51c2334d4c4190
+vendor/bin/spectraltool|7ee02d8c31f0d0bf73fdcc48d3885d2fc9869825
+vendor/bin/vendor_cmd_tool|457bcfbc6d64b5c332ffe4d1532e9de483398dd0
+vendor/bin/wifilearner|2643ed56420debcb050ed6e8311a93e4a5f086ae
+vendor/etc/init/init.embmssl_server.rc|6d81671d87097afa440f0dc8b5850b38a3e6726a
+vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc|aacefc44da5e64760bc12779a83b905ca6b78f01
+vendor/lib64/libembmsservice.so|c188915a5066d5658c8fa96d58ede1f6df07e729
+vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|c7723a934596433511b48d8e24da0afb49c37e76
+vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|b07738cf7722495bbe635c5cc00adc5e2cb179c4
+vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so|cbdb61c9c3974479bdaeeda71cdf6a4d3ac4558a
+
+# WIGIG - from LA.UM.9.1.r1-07300-SMxxx0.0
+-system_ext/app/WigigTetheringRRO/WigigTetheringRRO.apk|e5386f255891bebd2c99a8a908b2519e6efd313a
+system_ext/framework/wigig-service.jar|5e22482d17a5ea5a3b2b14d897f567ddf9670155
+vendor/bin/ftm_flows_test|8db257c9a987a409966e6ecec4fd396785f64b2f
+vendor/bin/ftmtest|356507d1d603629194391e0f4ee5316489bab604
+vendor/bin/host_manager_11ad|85a1ec1f94b022c03c25cea7e64e1a811c2b8217
+vendor/bin/shell_11ad|eb9e50cdd5ac3dcf97eda8f7d6b4c922da3e8cf5
+vendor/bin/wigig_wiburn|c578987f6e15502a0fc9dce0c22821e349ee550d
+vendor/bin/wigighalsvc|43a5cc80d6404a5c46a62e5a05ec5f22da55e88e
+vendor/bin/wigignpt|602e1bedab3a40249f7f1dddc4350d7b575cd8be
+vendor/etc/configstore/wigig.xml|ae50a99600bfd7b95f2a073943c8018316ca014f
+vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc|551a975d990fd977fff3f72d0dc6b981c1207c28
+vendor/etc/wifi/aoa_cldb_falcon.bin|7511e868c40e66e9758568b7112894cbce2650a4
+vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
+vendor/etc/wifi/wigig_p2p_supplicant.conf|9290b3afaf6175e8dcfe63956b27cfd8f78c6e25
+vendor/etc/wifi/wigig_supplicant.conf|c62e0b2dee7cb149accbe658d841daabbc92a6b9
+vendor/firmware/wigig/wigig.ini|1ec12833a14cab778168c24c283e237cadbd1781
+vendor/lib/libaoa.so|2e7dd8e6ac39eae6b28a638d6d80cb976108fa04
+vendor/lib/libwigig_flashaccess.so|07cacb7e8bff4a608a29412c0b9329a92f71fc22
+vendor/lib/libwigig_ftm_flows.so|1183c5fc5a42b6be4f2b2d7ccd57dea4677a9f91
+vendor/lib/libwigig_pciaccess.so|9292b86ba58e56d54a6ae6c7a77f6a77ef300d37
+vendor/lib/libwigig_utils.so|650f0568e032a1aa65dceb72b50a73d9437fbd4c
+vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so|d9fb92377b52bce9a9d268ea270e5faf8b3bf53d
+vendor/lib64/libaoa.so|569ab717befe9c10cfb5d65161ade2bfee4903de
+vendor/lib64/libwigig_flashaccess.so|24cd4c77a42887e36896b40de02774aee283da51
+vendor/lib64/libwigig_ftm_flows.so|2fd83e2eb2a0767d9505a78f759ccaf25e348ffb
+vendor/lib64/libwigig_pciaccess.so|b7aaf5e622361bfe6d4cf4c437add3ff91f368b7
+vendor/lib64/libwigig_utils.so|dd4ce3dae1683f3641f698173f98c21576beaf27
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so|1b039e8f5bacbce1e163fe193938b8054aa02d4d
+vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so|74aa1b56de032bdaefed266f285d5a05cbfb253f
+
 # Xiaomi
 etc/permissions/vendor-xiaomi-hardware-citsensorservice.xml
 etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
@@ -1952,10 +1998,8 @@ vendor/bin/fmconfig
 vendor/bin/fmfactorytest
 vendor/bin/fmfactorytestserver
 vendor/bin/fsync
-vendor/bin/ftmtest
 vendor/bin/getconf
 vendor/bin/hal_proxy_daemon
-vendor/bin/host_manager_11ad
 vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -1991,7 +2035,6 @@ vendor/bin/qdcmss
 vendor/bin/qmi_simple_ril_test
 vendor/bin/qseecom_sample_client
 vendor/bin/secure_ui_sample_client
-vendor/bin/shell_11ad
 vendor/bin/sigma_dut
 vendor/bin/slad
 vendor/bin/spectraltool
@@ -2006,11 +2049,7 @@ vendor/bin/vppservice
 vendor/bin/vsimd
 vendor/bin/watch
 vendor/bin/wifilearner
-vendor/bin/wigighalsvc
-vendor/bin/wigignpt
-vendor/bin/wigig_wiburn
 vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/configstore/wigig.xml
 vendor/etc/ftm_test_config_qrd
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/hdr_config.cfg
@@ -2043,7 +2082,6 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/init/vendor.qti.sla.service@1.0-service.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
@@ -2163,9 +2201,6 @@ vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
 vendor/lib/libwapi_cert.so
-vendor/lib/libwigig_flashaccess.so
-vendor/lib/libwigig_pciaccess.so
-vendor/lib/libwigig_utils.so
 vendor/lib/libwvkeybox.so
 vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
@@ -2250,9 +2285,6 @@ vendor/lib64/libteeclientjni.so
 vendor/lib64/libultrasound.so
 vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libwapi_cert.so
-vendor/lib64/libwigig_flashaccess.so
-vendor/lib64/libwigig_pciaccess.so
-vendor/lib64/libwigig_utils.so
 vendor/lib64/libwvkeybox.so
 vendor/lib64/ls_nq_client.so
 vendor/lib64/qtibus.so
