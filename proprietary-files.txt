@@ -753,14 +753,6 @@ vendor/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
 
-# ESE-Powermanager
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
-vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-
 # FM
 lib/fm_helium.so
 lib/libfm-hci.so
@@ -1573,6 +1565,89 @@ vendor/lib/libsubsystem_control.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libsubsystem_control.so
 
+# SecureMSM (GPQESE) - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|0de9474912b1206cfe17459afca9ebb28bdd2468
+vendor/bin/hw/vendor.qti.secure_element@1.2-service|9f9e86077a957483dddc581d7e2c20f309ccc473
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
+vendor/etc/init/vendor.qti.secure_element@1.2-service.rc|cb8e44a67709a5d9c2f0544058d79eb9f6faad7b
+vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so|7f5adb335d12659d76fa13318b635e30ee67da6e
+vendor/lib/android.hardware.secure_element@1.0-impl.so|920fd675e499e06b2ef60655b9f920568f239527
+vendor/lib/vendor.qti.esepowermanager@1.0.so|94f25d4c70dac7903000f4ea35af148377665ca6
+vendor/lib/vendor.qti.esepowermanager@1.1.so|f994ed607e87d2a3ad020edb38c05cea356d92ef
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|17f648402c874e4f981caadd91438a525089e35d
+vendor/lib64/android.hardware.secure_element@1.0-impl.so|21d50a96e8e3cd14cecc47e683da651d8ff3b958
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|a114629809e67015a14e5e367c6fb374adaafbc2
+vendor/lib64/vendor.qti.esepowermanager@1.1.so|f111cf42439d28fe88d9ebf6b6a1c44b729a3194
+
+# SecureMSM (SECDISP) - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti|5ca252e5095359d33b08cfbe9ee7e2db9949bff1
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
+vendor/bin/TrustedUISampleTest|16520b64fb473e1957524216a79e7185d799442a
+vendor/bin/secure_ui_sample_client|8205af7aad537951bc6f502b07264d7f53f04fee
+vendor/etc/init/vendor.qti.hardware.trustedui@1.0-service-qti.rc|5e28453fdf335cb6d99e77f61b214527923897a3
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/libSecureUILib.so|836252a74f9b6a66f464d2071268296971117629
+vendor/lib/libStDrvInt.so|daea5be20f666076d0f82262a9a8b46e4cc51158
+vendor/lib/libTouchInputVM.so|ee29257e58999a52ddd0daf1f0daa343a4b7f275
+vendor/lib/libTrustedInput.so|c0a8b9bce2bd4be3199267c8c7f06a79e42ec12c
+vendor/lib/libTrustedInputTZ.so|f76cc1d231a31bc543641bfe57629dabe7d9ff2a
+vendor/lib/libTrustedUI.so|10495b050ac23ebb577db089b6977f43cad8c63e
+vendor/lib/libTrustedUITZ.so|488dacf9d530df689488c80f4d618b84c215b998
+vendor/lib/libsecureui_svcsock.so|fd78cdbe3f2e2349b07872cc1116f90a519db054
+vendor/lib/libsecureui.so|c32997467a1e611804a635b88bba053d64fa0a66
+vendor/lib/libsi.so|03ffc03faf2cee7449dcdeda50e7ec1aa7ebec7f
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|59cefa436dba73efd4c5d506d0daa104a8b14a82
+vendor/lib/vendor.qti.hardware.systemhelper@1.0.so|874b7e4b3232728fe650b23c69ded9386d60fe08
+vendor/lib/vendor.qti.hardware.trustedui@1.0.so|338b3fdca33170b2af8b01000c4741d758e9a65f
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|37a9af9fbdf5e3ec24129037d6f2fc16317ade23
+vendor/lib64/libSecureUILib.so|8eaad2703c2964c8f36e35a19943a54e1a0f3f64
+vendor/lib64/libStDrvInt.so|a166aeaeaeb70f12bc607ff7852e039ee5cb004f
+vendor/lib64/libTouchInputVM.so|6daf13749cac438f4b795aa36644ce1de879a2e7
+vendor/lib64/libTrustedInput.so|2ddc6be9e6e921ee69ba555ee214cbbfaff1f455
+vendor/lib64/libTrustedInputTZ.so|478a01f71215895a711996208433b22fdef43913
+vendor/lib64/libTrustedUI.so|86d5c0d23ecbfb98304823b46247a3b2b4645434
+vendor/lib64/libTrustedUITZ.so|7ca0dc5d1506309f94e60a0121a1ea27565674d0
+vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
+vendor/lib64/libsecureui.so|69a0cb8db2024689dbeb82f4ff962812d1742a2f
+vendor/lib64/libsi.so|8c844902d1e147eb7ff0930a0c049cef41e3cb0a
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|7db1d6865fb1589e9e7f97c3e1c59ae5ab505ead
+vendor/lib64/vendor.qti.hardware.systemhelper@1.0.so|a47a99926f4ca6c50bdd123a882b57974a7cd837
+vendor/lib64/vendor.qti.hardware.trustedui@1.0.so|feb2ace323ed74a43199f2d5db96daa6176ef741
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
+
+# SecureMSM - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/KmInstallKeybox|1ec6a8a5682ac8121fd04b5fb232e224f6ecc5ab
+vendor/bin/StoreKeybox|5d8150a0aceca5f523f3c2eaa92263bed41cee5e
+vendor/bin/hdcp1prov|dfb184ae2c811832b2de8f0572ddc15a0559c6d2
+vendor/bin/hdcp2p2prov|c6de3f2bd0ad2abf830b3eda8d51f21e6a91ffab
+vendor/bin/sec_nvm|b7316e5761cfbacfc7e27771b940eeaef2f1cc71
+vendor/bin/spdaemon|a531818617bb1408cba2b73066d858a39a0390b1
+vendor/lib/libbase64.so|46edec1c4c0d6d1aef734f58172f2a34fe130685
+vendor/lib/libcpion.so|37422c85615bba93860479b1827e0ac135f67233
+vendor/lib/libcppf.so|3f15f30e0a3e65864e8e95384ed310db06609f55
+vendor/lib/libhdcpsrm.so|45bb6a6971a0dfa5fdc39a96ca810b0bcd4d04be
+vendor/lib/libhdcp1prov.so|7f3b0d1a67e50533a70c07c78639e4261d7675b3
+vendor/lib/libhdcp2p2prov.so|4ee0a208dc0a502b809fe8e3364b1266c12c1e74
+vendor/lib/libops.so|368fe17c7f85ec737e7b85e680bc07c0fda0b60f
+vendor/lib/libpvr.so|b4a2d6cc8fbefb16c9c2e0737090d578f8fccb74
+vendor/lib/libqisl.so|8da3650f2c43fd1588ea24cdf8b51ae337dc824d
+vendor/lib/librmp.so|c6fdc6906e4107fb183c6ccdf97b1b3b0d0cecdc
+vendor/lib/libspl.so|3398ec580db4aefc4f98d519d714b7255babac53
+vendor/lib/libtrustedapploader.so|3d5062a5eb986d38483966a8b3988abdd3f6ae9c
+vendor/lib/libtzdrmgenprov.so|bcf860b758183b39d2404e1cc0d64816b494615d
+vendor/lib64/libbase64.so|ddadae2df67d5393250c0357b4ca713e5bf73011
+vendor/lib64/libcpion.so|2ac074b9ee7afd1578c33128db6df65c3b18e870
+vendor/lib64/libhdcpsrm.so|bc3384a9f02a2a236a7d6316e6101a5ac4a1a039
+vendor/lib64/libhdcp1prov.so|61702ec3b91c9922d8b85cf44a07add9d977e1ba
+vendor/lib64/libhdcp2p2prov.so|20d222610d9984343747449e62100d859f1d072c
+vendor/lib64/libops.so|18129a7dde9a6381750e281877cf88c30483cd01
+vendor/lib64/libpvr.so|fe9253727d3e7f53cbce2f6a530379233c5ac6f2
+vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
+vendor/lib64/librmp.so|6dc641b412f715378e725036c9f14b7445e1e874
+vendor/lib64/libspl.so|f9c12bc40b075ef5b933fe0ff6b86ebe72a031db
+vendor/lib64/libtrustedapploader.so|fbd6f6db5b91357a5cc6d621d3ce48ba27ec3f75
+vendor/lib64/libtzdrmgenprov.so|c5f1a7d1f4bc5fc03156f34c9b020d4fc41b79cd
+
 # Sensor-calibrate
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
@@ -1659,12 +1734,6 @@ vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
-# TUI
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
 vendor/bin/mi_thermald

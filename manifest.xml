@@ -260,14 +260,14 @@
     <hal format="hidl">
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.2</version>
         <interface>
             <name>ISecureElement</name>
             <instance>SIM1</instance>
             <instance>eSE1</instance>
         </interface>
-        <fqname>@1.0::ISecureElement/SIM1</fqname>
-        <fqname>@1.0::ISecureElement/eSE1</fqname>
+        <fqname>@1.2::ISecureElement/SIM1</fqname>
+        <fqname>@1.2::ISecureElement/eSE1</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -405,12 +405,12 @@
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IEsePowerManager</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IEsePowerManager/default</fqname>
+        <fqname>@1.1::IEsePowerManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.gnss</name>
@@ -743,6 +743,21 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISoter/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.trustedui</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITrustedInput</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITrustedUI</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ITrustedInput/default</fqname>
+        <fqname>@1.0::ITrustedUI/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
