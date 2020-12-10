@@ -1,3 +1,8 @@
+/bt_firmware(/.*)?                                                                                      u:object_r:bt_firmware_file:s0
+/dsp(/.*)?                                                                                              u:object_r:adsprpcd_file:s0
+/firmware(/.*)?                                                                                         u:object_r:firmware_file:s0
+/persist(/.*)?                                                                                          u:object_r:mnt_vendor_file:s0
+
 # DC Dimming
 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                                 u:object_r:sysfs_dm:s0
 
