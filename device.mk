@@ -232,7 +232,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor \
     libc2dcolorconvert \
     libmm-omxcore \
     libOmxAacEnc \
@@ -498,8 +497,10 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor
