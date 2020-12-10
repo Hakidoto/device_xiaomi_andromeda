@@ -1740,6 +1740,10 @@ vendor/etc/thermald-devices.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 
+# TFTP - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/tftp_server|bf50c0180753908c73fa1f711af87ed35b6947de
+vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
+
 # Time - from LA.UM.8.1.r1-15100-sm8150.0
 -vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
 vendor/bin/time_daemon|b373ff82d30fb535a810347462728140e70ce9e8
