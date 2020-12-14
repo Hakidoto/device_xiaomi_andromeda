@@ -1188,10 +1188,25 @@ vendor/lib/libpn551_fw.so
 vendor/lib/libpn553_fw.so
 vendor/lib/libpn557_fw.so
 
-# Neural-networks
-vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
-vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc
-vendor/lib64/libhexagon_nn_stub.so
+# Neural-networks - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|0a86349d0b595d69482215d4ed33f667f9b98b97
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|55d2c71535acdcbbdd7b0a3fe475249c8d99eb08
+vendor/lib64/libhexagon_nn_stub.so|a3676113882842116279fe902af00e630ec1778c
+vendor/lib64/unnhal-acc-adreno.so|a7c47ffe9c068c7bb0d6b47a182df92483f041f3
+vendor/lib64/unnhal-acc-common.so|32fdec585f2d710e37ffe327894aec6a7ea220eb
+vendor/lib64/unnhal-acc-hvx.so|9e75c759a04aed19b36eaeb86aa8ae73521ff463
+
+# NPU - from LA.UM.9.1.r1-07300-SMxxx0.0
+vendor/bin/npu_launcher|c19c666cb89c7f9eba65097dfdd9d0385b08dcb4
+vendor/lib/libhta_hexagon_runtime.so|275cbca059960690541b95f4c1cf5fbc89fa0041
+vendor/lib/libnpu.so|d1b854bcf6a58721599d9a20629a1738e197031a
+vendor/lib/unnhal-acc-hta.so|f6e046616e46b123a818be76b66cb3ce953662f8
+vendor/lib64/libhta_hexagon_runtime.so|7495f15b61432913020d390cc455d8ae424019c6
+vendor/lib64/libnpu.so|91f98df1d1b1f6944d9dd63ec94af77889acf6aa
+vendor/lib64/unnhal-acc-hta.so|f38899dbcc7582d267703f1967e77485e82bf66b
 
 # Pasrmanager - from LA.UM.9.1.r1-07300-SMxxx0.0
 -vendor/app/pasrservice/pasrservice.apk|6d4e8bab2426b03231531ec09bce922601b8e8e6
