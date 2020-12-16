@@ -65,4 +65,10 @@
     <string name="dc_dimming_enable_title">DC Dimming</string>
     <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
     <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
+
+    <!-- Slider settings -->
+    <string name="slider_settings_title">Slider settings</string>
+    <string name="slider_settings_summary">Adjust various slider related settings</string>
+    <string name="slider_mode_title">Camera mode</string>
+    <string name="slider_mode_summary">Enable autostart of the camera app when opening the slider</string>
 </resources>
