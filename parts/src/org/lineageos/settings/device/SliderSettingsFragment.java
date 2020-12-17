@@ -17,40 +17,35 @@
 package org.lineageos.settings.device;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
-import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 
 import org.lineageos.settings.R;
+import org.lineageos.settings.utils.FileUtils;
 
 public class SliderSettingsFragment extends PreferenceFragment implements
-        Preference.OnPreferenceChangeListener {
+        OnPreferenceChangeListener {
 
     private SwitchPreference mSliderPreference;
+    private static final String SLIDER_ENABLE_KEY = "slider_enable";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.slider_settings);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-        mSliderPreference = (SwitchPreference) findPreference("slider_enable");
+        mSliderPreference = (SwitchPreference) findPreference(SLIDER_ENABLE_KEY);
         mSliderPreference.setEnabled(true);
         mSliderPreference.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if ("slider_enable".equals(preference.getKey())) {
-            SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(SliderSettingsActivity.getAppContext());
-            boolean slider = sharedPreferences.getBoolean("slider_enable", false);
-            if (slider) {
-                mSliderPreference.setEnabled(true);
-            } else {
-                mSliderPreference.setEnabled(false);
-            }
+        if (SLIDER_ENABLE_KEY.equals(preference.getKey())) {
+            //TODO actually implement something here
         }
         return true;
     }

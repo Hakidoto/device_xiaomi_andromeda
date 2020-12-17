@@ -16,25 +16,18 @@
 
 package org.lineageos.settings.device;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
 public class SliderSettingsActivity extends PreferenceActivity {
 
     private static final String TAG_SLIDER = "slider";
-    private static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        SliderSettingsActivity.context = getApplicationContext();
 
         getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new SliderSettingsFragment(), TAG_SLIDER).commit();
-    }
-
-    public static Context getAppContext() {
-        return SliderSettingsActivity.context;
     }
 }

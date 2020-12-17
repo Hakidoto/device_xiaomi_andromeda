@@ -20,7 +20,6 @@ import android.app.ActivityManager;
 import android.app.Instrumentation;
 import android.app.KeyguardManager;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.Intent;
 import android.hardware.camera2.CameraManager;
 import android.os.PowerManager;
@@ -29,8 +28,6 @@ import android.os.Vibrator;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.view.KeyEvent;
-
-import androidx.preference.PreferenceManager;
 
 import com.android.internal.os.DeviceKeyHandler;
 
@@ -162,12 +159,6 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
 
     private void handleSliderDown() {
         if (mIsCameraAppOpen && mIsDefaultCameraAppOpen) {
-            return;
-        }
-
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(SliderSettingsActivity.getAppContext());
-        boolean settingState = sharedPreferences.getBoolean("slider_enable", false);
-        if (settingState) {
             return;
         }
 
