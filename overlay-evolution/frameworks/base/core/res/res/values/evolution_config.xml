@@ -101,4 +101,19 @@
         <item>org.lineageos.lineageparts.gestures.KeyHandler</item>
         <item>org.lineageos.settings.device.KeyHandler</item>
     </string-array>
+
+    <!-- Whether the device has outdated qti-telephony-common.jar -->
+    <bool name="config_oldQtiTelephony">false</bool>
+
+    <!-- Whether the device supports Smart Pixels--> 
+    <bool name="config_enableSmartPixels">true</bool>
+
+    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+
+    <!-- Hide the vendor mismatch dialog -->
+    <bool name="config_show_vendor_mismatch_message">false</bool>
+
 </resources>

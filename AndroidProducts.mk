@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_andromeda.mk
+    $(LOCAL_DIR)/evolution_andromeda.mk
+
+COMMON_LUNCH_CHOICES := \
+    evolution_andromeda-user \
+    evolution_andromeda-userdebug \
+    evolution_andromeda-eng
