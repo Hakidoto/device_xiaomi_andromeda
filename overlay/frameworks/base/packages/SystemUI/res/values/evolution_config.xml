@@ -16,12 +16,9 @@
 -->
 
 <resources>
-    <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">6</integer>
-    <integer name="config_maxVisibleNotificationIconsWhenDark">7</integer>
-
-    <!-- Max visible status icons -->
-    <integer name="config_maxVisibleStatusIcons">8</integer>
+    
+    <!-- Burn in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
