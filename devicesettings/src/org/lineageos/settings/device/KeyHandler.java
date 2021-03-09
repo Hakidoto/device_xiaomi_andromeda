@@ -17,7 +17,6 @@
 package org.lineageos.settings.device;
 
 import android.app.ActivityManager;
-import android.app.Instrumentation;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
@@ -170,7 +169,8 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
             return;
         }
 
-        Instrumentation m_Instrumentation = new Instrumentation();
-        m_Instrumentation.sendKeyDownUpSync( KeyEvent.KEYCODE_BACK );
+        Intent intent2 = new Intent(Intent.ACTION_MAIN);
+        intent2.addCategory(Intent.CATEGORY_HOME);
+        startActivityAsUser(intent2, UserHandle.CURRENT_OR_SELF);
     }
 }
