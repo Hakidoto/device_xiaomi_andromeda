@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="slider_status"
+        android:summary="@string/slider_status_summary"
+        android:title="@string/slider_status_title" />
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/slider_effects_entries"
+        android:entryValues="@array/slider_effects_values"
+        android:key="slider_sound_effect"
+        android:summary="%s"
+        android:title="@string/slider_title" />
+
+</PreferenceScreen>
