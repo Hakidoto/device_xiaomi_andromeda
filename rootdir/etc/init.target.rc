@@ -154,6 +154,7 @@ on boot
     write /dev/cpuset/system-background/cpus 0-7
 
     chown system system /sys/class/thermal/thermal_message/sconfig
+    write /sys/class/thermal/thermal_message/sconfig 10
 
 # Allow system to modify exposure adjustment state
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
