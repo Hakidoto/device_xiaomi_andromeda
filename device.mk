@@ -135,7 +135,8 @@ PRODUCT_PACKAGES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat64.enabled=true
+    dalvik.vm.dex2oat64.enabled=true \
+    dalvik.vm.heapgrowthlimit=256m
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
