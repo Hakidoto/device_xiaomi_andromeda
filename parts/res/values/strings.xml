@@ -66,18 +66,6 @@
     <string name="slider_settings_summary">Adjust slider related settings</string>
     <string name="slider_mode_title">Camera mode</string>
     <string name="slider_mode_summary">Don\'t start camera when opening slider</string>
-
-    <!-- Slider settings: Sounds -->
-    <string name="slider_sound_title">Slider Sounds</string>
-    <string name="slider_sound_summary">Select sound effect</string>
-
-    <!-- Slider settings: Sound types -->
-    <string name="slider_sound_jianghu">Warrior</string>
-    <string name="slider_sound_jiguan">Mechanics</string>
-    <string name="slider_sound_keji">Hi-tech</string>
-    <string name="slider_sound_lingdong">Intellect</string>
-    <string name="slider_sound_zippo">Lighter</string>
-    <string name="slider_sound_none">None</string>
     
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal Profiles</string>

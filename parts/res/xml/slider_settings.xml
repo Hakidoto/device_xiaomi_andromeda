@@ -21,13 +21,4 @@
         android:icon="@drawable/camera"
         android:title="@string/slider_mode_title"
         android:summary="@string/slider_mode_summary" />
-
-    <ListPreference
-        android:key="slider_sound"
-        android:entries="@array/slider_sound_entries"
-        android:entryValues="@array/slider_sound_values"
-        android:defaultValue="0"
-        android:icon="@drawable/volume_high"
-        android:title="@string/slider_sound_title"
-        android:summary="@string/slider_sound_summary" />
 </PreferenceScreen>

@@ -22,7 +22,6 @@ import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.camera2.CameraManager;
-import android.media.MediaPlayer;
 import android.os.PowerManager;
 import android.os.SystemProperties;
 import android.os.UserHandle;
@@ -51,8 +50,6 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
     private boolean mIsCameraAppOpen = false;
     private boolean mIsDefaultCameraAppOpen = false;
     private Timer mCameraInUseTimer;
-    private String sound_name;
-    private String sound_state;
 
     public KeyHandler(Context context) {
         mContext = context;
@@ -110,13 +107,9 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
         int scanCode = event.getScanCode();
         switch (scanCode) {
             case KEYCODE_SLIDER_UP:
-                sound_state = "close";
-                playSound();
                 handleSliderUp();
                 break;
             case KEYCODE_SLIDER_DOWN:
-                sound_state = "open";
-                playSound();
                 handleSliderDown();
                 break;
             default:
@@ -187,32 +180,4 @@ public class KeyHandler extends CameraManager.AvailabilityCallback
         Instrumentation m_Instrumentation = new Instrumentation();
         m_Instrumentation.sendKeyDownUpSync( KeyEvent.KEYCODE_BACK );
     }
-
-    private void playSound(){
-       sound_name = SystemProperties.get("persist.slider.sound");
-       if (sound_name == "none") {
-          return;
-       }
-
-       MediaPlayer mp = new MediaPlayer();
-       try {
-           mp.setDataSource("file:///product/media/audio/ui/slide_"+sound_name+"_"+sound_state+".ogg");
-           mp.prepare();
-           mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-
-             @Override
-             public void onCompletion(MediaPlayer mp)
-             {
-              mp.stop();
-              mp.reset();
-              mp.release();
-              mp=null;
-             }
-           });
-           mp.start();
-       } catch (Exception e) {
-           e.printStackTrace();
-       }
-   }
-
 }

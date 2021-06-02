@@ -95,24 +95,4 @@
         <item>"0,4,2,0,-2,-2,4"</item>
         <item>"2,0,0,-2,-4,0,0"</item>
     </string-array>
-
-    <!-- Values for Slider sound prefs -->
-    <string-array name="slider_sound_entries" translatable="false">
-        <item>@string/slider_sound_jianghu</item>
-        <item>@string/slider_sound_jiguan</item>
-        <item>@string/slider_sound_keji</item>
-        <item>@string/slider_sound_lingdong</item>
-        <item>@string/slider_sound_zippo</item>
-        <item>@string/slider_sound_none</item>
-    </string-array>
-
-    <string-array name="slider_sound_values" translatable="false">
-        <item>jianghu</item>
-        <item>jiguan</item>
-        <item>keji</item>
-        <item>lingdong</item>
-        <item>zippo</item>
-        <item>none</item>
-    </string-array>
-
 </resources>
